@@ -1,0 +1,5 @@
+res://scenes/complexed_modules/ship/ship.tscn
+res://tests/ship_test/test_ship.tscn
+res://scenes/complexed_modules/ship/ship.gd
+res://scenes/modules/EntityController.gd
+res://resourses/ship_move/standard_ship.tres
