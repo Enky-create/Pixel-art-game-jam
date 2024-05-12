@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShipMoveResource" load_steps=2 format=3 uid="uid://yoab718s5xn5"]
+
+[ext_resource type="Script" path="res://resourses/ship_move_resource.gd" id="1_bk7dj"]
+
+[resource]
+script = ExtResource("1_bk7dj")
+max_speed = 1000.0
+min_speed = 50.0
+acceleration = 15.0
+rotation_speed = 15.0
+fritction = 0.1
