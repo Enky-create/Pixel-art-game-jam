@@ -5,11 +5,13 @@
 [node name="Cannon" type="Node2D"]
 script = ExtResource("1_uodi2")
 
-[node name="Markers" type="Node" parent="."]
+[node name="Markers" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="Markers"]
+position = Vector2(208, 0)
 
 [node name="Time Between shots" type="Timer" parent="."]
+wait_time = 0.3
 one_shot = true
 
 [node name="ReloadTimer" type="Timer" parent="."]

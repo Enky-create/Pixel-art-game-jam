@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Spawning="*res://addons/BulletUpHell/Spawning.tscn"
+Bulletfactory="*res://scenes/modules/bulletfactory.tscn"
 
 [editor_plugins]
 

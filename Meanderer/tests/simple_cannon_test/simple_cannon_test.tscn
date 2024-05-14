@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8udd283tub0b"]
+
+[ext_resource type="Script" path="res://tests/simple_cannon_test/simple_cannon_test.gd" id="1_efafw"]
+[ext_resource type="PackedScene" uid="uid://bdn07kqjjea1m" path="res://scenes/complexed_modules/Cannon/simple_cannon.tscn" id="2_nvf80"]
+
+[node name="SimpleCannonTest" type="Node2D"]
+script = ExtResource("1_efafw")
+
+[node name="SimpleCannon" parent="." instance=ExtResource("2_nvf80")]
+position = Vector2(360, 327)
+rotation = 1.36659

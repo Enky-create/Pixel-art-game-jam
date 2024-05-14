@@ -1,5 +1,9 @@
-Timer
+Node2D
 Marker2D
+Sprite2D
+SimpleCannon
+BulletFactory2D
+Timer
 Node
 InventoryGrid
 CtrlInventoryGridEx
@@ -7,5 +11,4 @@ VBoxContainer
 CanvasLayer
 Entity
 EntityController
-Sprite2D
 CollisionShape2D

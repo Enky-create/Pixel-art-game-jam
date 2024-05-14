@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CannonResource" load_steps=2 format=3 uid="uid://clnhucesm074r"]
+
+[ext_resource type="Script" path="res://resourses/cannon_resource/cannon_resource.gd" id="1_ebge7"]
+
+[resource]
+script = ExtResource("1_ebge7")
+time_between_shots = 0.4
+reload_time = 1.2
+spawns_at_one_shot = 1
+ammo_capacity = 45

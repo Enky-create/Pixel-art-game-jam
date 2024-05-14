@@ -2,7 +2,7 @@ extends Resource
 class_name DamageResource
 enum DamageType{
 	Fire,
-	Сutting,
+	Cutting,
 	Poison,
 	Magic
 }

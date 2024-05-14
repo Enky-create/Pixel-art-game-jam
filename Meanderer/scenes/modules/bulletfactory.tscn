@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://0g4ua54eckat"]
+
+[node name="BulletFactory2D" type="BulletFactory2D"]
