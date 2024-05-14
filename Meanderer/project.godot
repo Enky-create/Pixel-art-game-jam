@@ -14,6 +14,14 @@ config/name="Meanderer"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Spawning="*res://addons/BulletUpHell/Spawning.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/BulletUpHell/plugin.cfg", "res://addons/gloot/plugin.cfg", "res://addons/godot_state_charts/plugin.cfg")
+
 [input]
 
 move_up={

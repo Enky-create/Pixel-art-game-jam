@@ -1,3 +1,7 @@
+InventoryGrid
+CtrlInventoryGridEx
+VBoxContainer
+CanvasLayer
 Entity
 EntityController
 Sprite2D
