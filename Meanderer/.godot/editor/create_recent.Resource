@@ -1,1 +1,2 @@
+DamageResource
 ShipMoveResource

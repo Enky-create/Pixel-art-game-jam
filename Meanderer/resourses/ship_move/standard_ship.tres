@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="ShipMoveResource" load_steps=2 format=3 uid="uid://yoab718s5xn5"]
 
-[ext_resource type="Script" path="res://resourses/ship_move_resource.gd" id="1_bk7dj"]
+[ext_resource type="Script" path="res://resourses/ship_move/ship_move_resource.gd" id="1_bk7dj"]
+
 
 [resource]
 script = ExtResource("1_bk7dj")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://iyqemiu386sk"]
+
+[ext_resource type="Script" path="res://scenes/complexed_modules/Cannon/cannon.gd" id="1_uodi2"]
+
+[node name="Cannon" type="Node2D"]
+script = ExtResource("1_uodi2")
+
+[node name="Markers" type="Node" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="Markers"]
+
+[node name="Time Between shots" type="Timer" parent="."]
+one_shot = true
+
+[node name="ReloadTimer" type="Timer" parent="."]
+one_shot = true

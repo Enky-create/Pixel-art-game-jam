@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DamageResource" load_steps=2 format=3 uid="uid://b0ym61q2uklvp"]
+
+[ext_resource type="Script" path="res://resourses/damage/damage_resource.gd" id="1_xopyd"]
+
+[resource]
+script = ExtResource("1_xopyd")
+damage = 15.0
+type = 0

@@ -1,7 +1,11 @@
 res://scenes/modules/inventory.tscn
 res://scenes/complexed_modules/ship/ship.tscn
 res://tests/ship_test/test_ship.tscn
-res://addons/gloot/core/item_protoset.gd
-res://scenes/complexed_modules/inventory.gd
 res://examples/inventory_grid_ex_transfer.tscn
-res://addons/gloot/editor/gloot_undo_redo.gd
+res://resourses/damage/damage_resource.gd
+res://resourses/damage/damage_type.gd
+res://scenes/complexed_modules/Cannon/cannon.tscn
+res://resourses/damage/fire_damage.tres
+res://scenes/complexed_modules/Cannon/cannon.gd
+res://resourses/cannon_resource/cannon_resource.gd
+res://scenes/complexed_modules/simple_cannon/simple_cannon.gd
