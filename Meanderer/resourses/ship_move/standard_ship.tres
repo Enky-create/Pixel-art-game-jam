@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" path="res://resourses/ship_move/ship_move_resource.gd" id="1_bk7dj"]
 
-
 [resource]
 script = ExtResource("1_bk7dj")
 max_speed = 1000.0
 min_speed = 50.0
 acceleration = 15.0
-rotation_speed = 15.0
+min_rotation_speed = 10.0
+max_rotation_speed = 20.0
+rotation_acceleration = 0.12
 fritction = 0.1

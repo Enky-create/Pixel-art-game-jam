@@ -1,6 +1,7 @@
+Sprite2D
+TileMap
 Node2D
 Marker2D
-Sprite2D
 SimpleCannon
 BulletFactory2D
 Timer
@@ -11,4 +12,3 @@ VBoxContainer
 CanvasLayer
 Entity
 EntityController
-CollisionShape2D
