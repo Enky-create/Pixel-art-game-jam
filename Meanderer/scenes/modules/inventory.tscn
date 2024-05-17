@@ -50,6 +50,7 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="CtrlInventoryGridEx" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(640, 320)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4

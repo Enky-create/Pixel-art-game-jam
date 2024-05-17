@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpkmurigowgi7"]
+
+[ext_resource type="Script" path="res://field_of_view.gd" id="1_i47f7"]
+[ext_resource type="Script" path="res://scenes/complexed_modules/ship/ship.gd" id="2_kuae2"]
+[ext_resource type="Resource" uid="uid://yoab718s5xn5" path="res://resourses/ship_move/standard_ship.tres" id="3_0uu0m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64w5l"]
+size = Vector2(212, 48)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_045m8"]
+radius = 69.2604
+
+[node name="FieldTest" type="Node2D"]
+
+[node name="FieldOfView" type="Node2D" parent="." node_paths=PackedStringArray("exception")]
+position = Vector2(241, 181)
+script = ExtResource("1_i47f7")
+exception = NodePath("../Ship")
+
+[node name="Ship" type="CharacterBody2D" parent="."]
+position = Vector2(543, 312)
+script = ExtResource("2_kuae2")
+move_resource = ExtResource("3_0uu0m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]
+shape = SubResource("RectangleShape2D_64w5l")
+
+[node name="Ship2" type="CharacterBody2D" parent="."]
+position = Vector2(543, 181)
+script = ExtResource("2_kuae2")
+move_resource = ExtResource("3_0uu0m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship2"]
+shape = SubResource("RectangleShape2D_64w5l")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(346, 181)
+shape = SubResource("CircleShape2D_045m8")
