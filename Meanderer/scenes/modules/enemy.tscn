@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://b36wh7hjdcuc5"]
+[gd_scene load_steps=4 format=3 uid="uid://b36wh7hjdcuc5"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_lyqj7"]
+[ext_resource type="Script" path="res://field_of_view.gd" id="2_54uy1"]
+[ext_resource type="Script" path="res://scenes/modules/hurtbox/hurtbox.gd" id="3_bsppu"]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource("1_lyqj7")
+
+[node name="FieldOfView" type="Node2D" parent="."]
+script = ExtResource("2_54uy1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Hurtbox" type="Area2D" parent="."]
+script = ExtResource("3_bsppu")
+
+[connection signal="target_detected" from="FieldOfView" to="." method="_on_field_of_view_target_detected"]

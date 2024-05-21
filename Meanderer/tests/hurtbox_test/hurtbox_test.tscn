@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpsc6iyh070gt"]
+
+[ext_resource type="PackedScene" uid="uid://dq7ph8cwxlyih" path="res://scenes/complexed_modules/ship/ship.tscn" id="1_gpkes"]
+[ext_resource type="Script" path="res://tests/hurtbox_test/hurtbox_test.gd" id="1_v5ogc"]
+[ext_resource type="Script" path="res://scenes/modules/hurtbox/hurtbox.gd" id="2_08ayn"]
+[ext_resource type="Script" path="res://tests/hurtbox_test/ProgressBar.gd" id="4_gx4l4"]
+[ext_resource type="PackedScene" uid="uid://bdn07kqjjea1m" path="res://scenes/complexed_modules/Cannon/simple_cannon.tscn" id="4_x0s88"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7albk"]
+size = Vector2(28, 110)
+
+[node name="HurtboxTest" type="Node2D"]
+script = ExtResource("1_v5ogc")
+
+[node name="Ship" parent="." instance=ExtResource("1_gpkes")]
+position = Vector2(747, 304)
+move_resource = null
+
+[node name="Hurtbox" type="Area2D" parent="Ship"]
+collision_layer = 16
+monitoring = false
+script = ExtResource("2_08ayn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship/Hurtbox"]
+shape = SubResource("RectangleShape2D_7albk")
+
+[node name="ProgressBar" type="ProgressBar" parent="Ship"]
+offset_left = -81.0
+offset_top = -124.0
+offset_right = 85.0
+offset_bottom = -97.0
+max_value = 1000.0
+script = ExtResource("4_gx4l4")
+
+[node name="SimpleCannon" parent="." instance=ExtResource("4_x0s88")]
+position = Vector2(0, 304)
+
+[connection signal="health_changed" from="Ship" to="Ship/ProgressBar" method="_on_ship_health_changed"]

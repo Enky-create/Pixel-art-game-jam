@@ -6,8 +6,8 @@
 script = ExtResource("1_bk7dj")
 max_speed = 2500.0
 min_speed = 50.0
-acceleration = 15.0
-min_rotation_speed = 10.0
+acceleration = 5.0
+min_rotation_speed = 25.0
 max_rotation_speed = 55.0
-rotation_acceleration = 0.12
-fritction = 0.1
+rotation_acceleration = 0.01
+fritction = 0.01
