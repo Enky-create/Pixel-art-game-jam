@@ -1,9 +1,8 @@
-res://scenes/complexed_modules/ship/ship.tscn
+res://scenes/levels/home_port.tscn
 res://assets/shaders/water.gdshader
 res://assets/shaders/water.tres
-res://resourses/bullet_blast_resource/simple_bullet.tres
+res://scenes/complexed_modules/ship/ship.tscn
 res://scenes/modules/inventory.tscn
-res://scenes/levels/home_port.tscn
 res://scenes/world.tscn
 res://tests/ship_test/test_ship.tscn
 res://scenes/modules/enemy.tscn
@@ -12,5 +11,6 @@ res://tests/test_field_of_view/field_test.tscn
 res://scenes/modules/hurtbox/hurtbox.tscn
 res://scenes/modules/bulletfactory.tscn
 res://tests/hurtbox_test/hurtbox_test.tscn
-res://scenes/complexed_modules/ship/ship.gd
-res://resourses/ship_move/standard_ship.tres
+res://assets/open_world_scripts/open_world.gd
+res://resourses/chank_data/chunk_data.gd
+res://assets/open_world_scripts/chunk.gd
