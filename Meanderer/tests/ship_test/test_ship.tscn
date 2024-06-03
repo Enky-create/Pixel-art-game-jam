@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://hcw0avgksdr1"]
+[gd_scene load_steps=4 format=3 uid="uid://hcw0avgksdr1"]
 
 [ext_resource type="Script" path="res://scenes/modules/EntityController.gd" id="1_mo62j"]
 [ext_resource type="PackedScene" uid="uid://dq7ph8cwxlyih" path="res://scenes/complexed_modules/ship/ship.tscn" id="2_c3dpi"]
+[ext_resource type="Script" path="res://scenes/chunks/fps.gd" id="3_1ytq5"]
 
 [node name="TestShip" type="Node2D"]
 
 [node name="EntityController" type="Node2D" parent="."]
 script = ExtResource("1_mo62j")
 entity_scene = ExtResource("2_c3dpi")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("3_1ytq5")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0

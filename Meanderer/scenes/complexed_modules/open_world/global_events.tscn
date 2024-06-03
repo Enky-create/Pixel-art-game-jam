@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://50i03k1838gf"]
+
+[ext_resource type="Script" path="res://scenes/complexed_modules/open_world/Events.gd" id="1_amsb4"]
+
+[node name="Events" type="Node2D"]
+script = ExtResource("1_amsb4")

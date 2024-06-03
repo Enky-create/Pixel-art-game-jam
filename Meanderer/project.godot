@@ -18,6 +18,12 @@ config/icon="res://icon.svg"
 
 Spawning="*res://addons/BulletUpHell/Spawning.tscn"
 Bulletfactory="*res://scenes/modules/bulletfactory.tscn"
+Events="*res://scenes/complexed_modules/open_world/global_events.tscn"
+World="*res://scenes/complexed_modules/open_world/world.tscn"
+
+[display]
+
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 

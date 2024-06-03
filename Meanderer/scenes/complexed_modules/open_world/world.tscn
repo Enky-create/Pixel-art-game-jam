@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfjfpu5nlxs8e"]
+
+[ext_resource type="Script" path="res://scenes/complexed_modules/open_world/World.gd" id="1_r04ko"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_r04ko")
+chunk_radius = 1
