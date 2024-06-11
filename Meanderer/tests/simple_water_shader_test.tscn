@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://q8wvpqv0be2y"]
+
+[ext_resource type="Texture2D" uid="uid://c0mu2xdohtrcu" path="res://assets/space night.png" id="1_3vni1"]
+[ext_resource type="PackedScene" uid="uid://bx6ny6dh32cnh" path="res://scenes/chunks/simple_water.tscn" id="2_xrv0b"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="SpaceNight" type="Sprite2D" parent="."]
+position = Vector2(372, 483)
+scale = Vector2(0.414, 0.321333)
+texture = ExtResource("1_3vni1")
+
+[node name="SimpleWater" parent="." instance=ExtResource("2_xrv0b")]
+position = Vector2(658, 332)

@@ -1,3 +1,8 @@
+TextureRect
+PointLight2D
+DirectionalLight2D
+GPUParticles2D
+Sprite2D
 VisibleOnScreenEnabler2D
 Node2D
 Node
@@ -5,10 +10,5 @@ VisibleOnScreenNotifier2D
 Label
 CanvasLayer
 Timer
-TextureRect
 EntityController
 Camera2D
-TileMap
-Hurtbox
-Sprite2D
-ProgressBar

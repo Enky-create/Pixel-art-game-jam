@@ -1,10 +1,12 @@
-res://tests/ship_test/test_ship.tscn
+res://scenes/complexed_modules/ship/ship.tscn
+res://assets/simple_water.gdshader
 res://assets/shaders/water.gdshader
 res://assets/shaders/water.tres
 res://scenes/complexed_modules/open_world/world.tscn
 res://scenes/complexed_modules/open_world/global_events.tscn
 res://tests/openworld_test/openworld_scene_test.tscn
 res://scenes/chunks/base_chunk.tscn
+res://tests/ship_test/test_ship.tscn
 res://scenes/chunks/water.tscn
-res://scenes/chunks/chunk_base.gd
-res://scenes/modules/EntityController.gd
+res://scenes/chunks/simple_water.tscn
+res://tests/simple_water_shader_test.tscn

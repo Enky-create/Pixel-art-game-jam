@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://5rx0h1883j2c"]
 
 [ext_resource type="Script" path="res://scenes/chunks/chunk_base.gd" id="1_vp585"]
-[ext_resource type="PackedScene" uid="uid://df6ildvc66pj1" path="res://scenes/chunks/water.tscn" id="2_ehi8s"]
+[ext_resource type="PackedScene" uid="uid://bx6ny6dh32cnh" path="res://scenes/chunks/simple_water.tscn" id="2_dr8j1"]
 
 [node name="Chunk" type="Node2D"]
 script = ExtResource("1_vp585")
-water_scene = ExtResource("2_ehi8s")
+water_scene = ExtResource("2_dr8j1")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 rect = Rect2(0, 0, 656, 656)

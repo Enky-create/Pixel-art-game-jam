@@ -14,7 +14,7 @@ var chunk_y: int
 
 var should_remove := false
 @export var water_scene:PackedScene
-var water:TileMap
+var water:Sprite2D
 
 func _ready():
 	var size:float = chunk_size*tile_size
