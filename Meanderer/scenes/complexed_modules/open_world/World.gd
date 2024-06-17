@@ -9,12 +9,11 @@ var update_timer: Timer
 var player_pos: Vector2
 var last_player_pos: Vector2 = Vector2.ZERO
 
-@export var chunk_size: int = 41
-@export var tilesize:int = 16
+@export var chunk_size: int = 1000
 
 var chunks: Dictionary = {}
 var unready_chunks: Dictionary = {}
-@export var chunk_radius: int = 2
+@export var chunk_radius: int = 1
 
 @onready var noise = FastNoiseLite.new()
 
@@ -94,13 +93,13 @@ func _on_update_timer_timeout() -> void:
 func determine_chunks_to_keep() -> void:
 	if not player_pos.x:
 		return
-	var p_x = floor(player_pos.x / tilesize / chunk_size)
-	var p_y = floor(player_pos.y / tilesize / chunk_size)
+	var p_x = floor(player_pos.x /  chunk_size)
+	var p_y = floor(player_pos.y /  chunk_size)
 
 	for x in range(p_x - chunk_radius, p_x + chunk_radius + 1):
 		for y in range(p_y - chunk_radius, p_y + chunk_radius + 1):
-			add_chunk(x * chunk_size*tilesize, y * chunk_size*tilesize)
-			var chunk = get_chunk(x * chunk_size*tilesize, y * chunk_size*tilesize)
+			add_chunk(x * chunk_size, y * chunk_size)
+			var chunk = get_chunk(x * chunk_size, y * chunk_size)
 			if chunk != null:
 				chunk.should_remove = false
 

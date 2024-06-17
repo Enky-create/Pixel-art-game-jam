@@ -4,6 +4,8 @@
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_r04ko")
+chunk_size = 656
+chunk_radius = 2
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 color = Color(0.657453, 0.599844, 0.522124, 1)

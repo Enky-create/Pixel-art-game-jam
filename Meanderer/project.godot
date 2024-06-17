@@ -23,6 +23,8 @@ World="*res://scenes/complexed_modules/open_world/world.tscn"
 
 [display]
 
+window/size/viewport_width=656
+window/size/viewport_height=656
 window/vsync/vsync_mode=0
 
 [editor_plugins]

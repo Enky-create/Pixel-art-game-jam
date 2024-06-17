@@ -1,18 +1,40 @@
-[gd_scene load_steps=4 format=3 uid="uid://b36wh7hjdcuc5"]
+[gd_scene load_steps=7 format=3 uid="uid://b36wh7hjdcuc5"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_lyqj7"]
-[ext_resource type="Script" path="res://field_of_view.gd" id="2_54uy1"]
-[ext_resource type="Script" path="res://scenes/modules/hurtbox/hurtbox.gd" id="3_bsppu"]
+[ext_resource type="Texture2D" uid="uid://dc2vg2xdk6uhd" path="res://assets/enemies/SlitheringMaw.png" id="2_1x608"]
+[ext_resource type="PackedScene" uid="uid://dahq4ty27ddlo" path="res://scenes/modules/field_of_view.tscn" id="2_k414p"]
+[ext_resource type="Script" path="res://scenes/modules/hurtbox/hurtbox.gd" id="4_00ytk"]
 
-[node name="Enemy" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_jfdrr"]
+radius = 44.7214
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o4ygb"]
+radius = 45.8912
+
+[node name="Slime" type="CharacterBody2D"]
+collision_mask = 0
 script = ExtResource("1_lyqj7")
 
-[node name="FieldOfView" type="Node2D" parent="."]
-script = ExtResource("2_54uy1")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-27, 0)
+rotation = -1.5708
+texture = ExtResource("2_1x608")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jfdrr")
+
+[node name="FieldOfView" parent="." instance=ExtResource("2_k414p")]
+group = "player"
 
 [node name="Hurtbox" type="Area2D" parent="."]
-script = ExtResource("3_bsppu")
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("4_00ytk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CircleShape2D_o4ygb")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(69, 0)
 
 [connection signal="target_detected" from="FieldOfView" to="." method="_on_field_of_view_target_detected"]

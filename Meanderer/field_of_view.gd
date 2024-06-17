@@ -7,7 +7,7 @@ signal target_lost(target)
 @export var distance: float = 1500
 @export var angle_degrees: float = 60
 @export var num_rays: int = 2 
-@export var exception:CollisionObject2D
+#@export var exception:CollisionObject2D
 @export var frequency_time:float=0.2
 @export var group:String
 @onready var target = get_tree().get_first_node_in_group(group)
@@ -25,7 +25,7 @@ func setup_cone_of_vision():
 		var theta = -angle_radians / 2 + step * i
 		ray.target_position  = Vector2(cos(theta), sin(theta)) * distance
 		ray.enabled = true
-		ray.add_exception(exception)  # Исключаем самого врага из проверки
+		#ray.add_exception(exception)  # Исключаем самого врага из проверки
 		self.add_child(ray)
 		rays.append(ray)
 
